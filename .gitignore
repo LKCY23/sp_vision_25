@@ -11,5 +11,4 @@ imgs/
 MvSdkLog/
 testvideos/
 watchdog.sh
-records_24/
-records_25/assets/test_buff/*.mp4
+/assets/test_buff/*.mp4

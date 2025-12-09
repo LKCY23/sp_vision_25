@@ -106,6 +106,15 @@ target_link_libraries(planner_test_offline ${OpenCV_LIBS} fmt::fmt yaml-cpp auto
 add_executable(buff_detector_test tests/test_buff/buff_detector_test.cpp)
 target_link_libraries(buff_detector_test ${OpenCV_LIBS} fmt::fmt yaml-cpp auto_buff tools io)
 
+add_executable(buff_solver_test tests/test_buff/buff_solver_test.cpp)
+target_link_libraries(buff_solver_test ${OpenCV_LIBS} fmt::fmt yaml-cpp auto_buff tools io)
+
+add_executable(buff_target_test tests/test_buff/buff_target_test.cpp)
+target_link_libraries(buff_target_test ${OpenCV_LIBS} fmt::fmt yaml-cpp auto_buff tools io)
+
+add_executable(buff_aimer_test tests/test_buff/buff_aimer_test.cpp)
+target_link_libraries(buff_aimer_test ${OpenCV_LIBS} fmt::fmt yaml-cpp auto_buff tools io)
+
 # 检查 ROS 环境
 find_package(ament_cmake QUIET)
 find_package(rclcpp QUIET)
